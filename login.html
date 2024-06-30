@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/css/login.css">
+    <link rel="icon" href="style/img/companylogo.png">
+    <title>Login</title>
+</head>
+<body>
+
+    <div id="login_page">      
+
+    <input type="text" id="name" style="width: 150px;"> Username
+    <input type="password" id="pass" style="width: 150px;"> Password
+    <button id="submit" onclick="login()"style="width: 120px;">Submit</button>
+
+</div>  
+
+<div style="margin-top: 10%; margin-left: 30%;">
+    <img src="https://media1.tenor.com/images/8821952d030095b515d178a134655f39/tenor.gif?itemid=7323865" alt="" id="rock_brow" style="visibility: hidden;">
+    
+</div>
+
+
+
+
+
+    <script>
+        function login() {
+            var name = document.getElementById("name").value
+            var pass = document.getElementById("pass").value            
+            if (name == "Admin" && pass == "666") {                
+
+                window.location="home.html"
+                alert("Annae Neengala? :) ulla vaanga!")
+            }
+            else {
+                document.getElementById("name").style.border="2px solid red"
+                document.getElementById("pass").style.border="2px solid red"   
+                document.getElementById("rock_brow").style.visibility="visible"             
+
+                alert("VELIYA PODA DAI!")               
+
+                
+            }          
+        }
+
+    </script>
+    
+</body>
+</html>
